@@ -15,7 +15,7 @@
 <h3>Here are your exam results :</h3>
 </div>
 <%ArrayList<String> studentNames =(ArrayList<String>)session.getAttribute("name");
-ArrayList<String> studentLastNames =(ArrayList<String>)request.getAttribute("lastname"); 
+ArrayList<String> studentLastNames =(ArrayList<String>)request.getSession().getAttribute("lastname"); 
 %>
 <%ArrayList<Float> grades =(ArrayList<Float>)session.getAttribute("grades");
 %>
